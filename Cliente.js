@@ -1,3 +1,5 @@
+import {Conta} from "./Conta.js"
+
 export class Cliente{
         get cpf(){
         return this._cpf;
