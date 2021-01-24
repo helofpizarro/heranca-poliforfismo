@@ -8,6 +8,20 @@ export class ContaCorrente extends Conta{
        ContaCorrente.numeroDeContas += 1;
      }
     
+     teste(){
+       super.teste()
+       console.log('teste na classe conta corrente')
+     }
+
+     sacar(valor){
+      let taxa = 1.1
+      const valorSacado = taxa * valor
+        if(this._saldo >= valorSacado){
+          this._saldo -= valorSacado;
+          return valorSacado;
+      }
+  }
+
    
      // #saldo =0 https://github.com/tc39/proposal-class-fields#private-fields
 }   
